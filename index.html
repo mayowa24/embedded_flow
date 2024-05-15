@@ -21,17 +21,23 @@
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
-		// Settings for Flows
+		// Settings for Field Service
 
-		embedded_svc.settings.enabledFeatures = ['Flows'];
-		embedded_svc.settings.entryFeature = 'Flows';
+		embedded_svc.settings.enabledFeatures = ['FieldService'];
+		embedded_svc.settings.entryFeature = 'FieldService';
+
+		embedded_svc.settings.useCustomAuthentication = false;
+		embedded_svc.settings.loginClientId = '';
+		embedded_svc.settings.loginRedirectURL = '';
+		embedded_svc.settings.loginTargetQuerySelector = '';
+		embedded_svc.settings.authenticationStartLabel = '';
 
 		embedded_svc.init(
 			'https://labstats--scheduler.sandbox.my.salesforce.com',
 			'https://labstats--scheduler.sandbox.my.site.com/sales',
 			gslbBaseURL,
 			'00DDC0000008vtA',
-			'test_scheduler_for_sales',
+			'salescode',
 			{
 				
 			}
